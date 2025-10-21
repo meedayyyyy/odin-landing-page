@@ -9,15 +9,30 @@
 body{
     display: flex;
     flex-direction: column;
-    padding: 0 80px;
+    /* padding: 0 80px; */
+    font-family: 'league spartan', sans-serif;
+    color: #7b400c;
 }
 
 header{
     display: flex;
-    padding: 24px 0;
+    padding: 24px 80px;
+    background-color: #bc6c25;
+    color: #faedcd;
 }
-h3,h4{
+.logo{
+       font-family: 'Fraunces', serif;
+font-style: italic; 
+font-weight: bold;
+}
+
+section, footer{
+        padding: 24px 80px;
+
+}
+h3,h4, .quote{
     font-family: 'Fraunces', serif;
+    color: #7b400c;
 }
 .logo{
     margin-right: auto;
@@ -36,6 +51,7 @@ ul{
 
 a{
     text-decoration: none;
+    color: #faedcd;
 }
 
 main{
@@ -43,8 +59,78 @@ main{
     flex-direction: column;
 }
 
-.hero{
+.hero, section{
     display: flex;
-    height: 300px;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+border-bottom: 0.5px solid #dd8b43;
+background-color: #faedcd;
+}
 
+.hero{
+flex-wrap: wrap;
+    row-gap: 24px;
+}
+.hero-right{
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 50%;
+}
+
+button{
+    flex-grow: 0;
+width: inherit;
+max-width: fit-content;
+padding: 16px;
+background-color: #bc6c25;
+color: #faedcd;
+border: none;
+border-radius: 4px;
+font-weight: 600;
+}
+
+.hero-left img {
+border-radius: 8px;
+
+/* border: 1px solid; */
+}
+.cards{
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.card, .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta{
+    height: 200px;
+}
+
+footer{
+    background-color: #bc6c25;
+    color: #faedcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+quote {
+    width: 60%;
+font-size: 24px;
+font-style: italic;
+text-align: center;
+}
+
+.cta-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-basis: 60%;
 }
